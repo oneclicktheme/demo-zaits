@@ -1,5 +1,14 @@
 @import "demo/demo";
 
+body {
+  background: #5c5c5c;
+
+  @media only screen and (min-width: 768px) {
+    background: transparent;
+  }
+}
+
+
 .section-banner {
   .title {
     font-size: 2rem;
@@ -72,4 +81,20 @@ canvas {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.banner-section {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 300px;
+
+  @media only screen and (min-width: 768px) {
+    width: 500px;
+    height: 500px;
+    border: 15px solid #fff;
+  }
 }
